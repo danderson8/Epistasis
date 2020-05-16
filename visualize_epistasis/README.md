@@ -1,0 +1,4 @@
+# Overview  
+The ‘visualize_epistasis.py’ script adds a command to pymol that can read in a set of epistasis data and visualize it on a target crystal structure. First order epistatic effects (mutation effects at a single position) are displayed using the scale of the alpha carbon. Second order epistatic effects (interaction between two positions) are displayed by the thickness of the line connecting the two positions. Similarly, higher order effects (interaction between three or more positions) are displayed by the thickness of the lines connecting all positions at a central point. Epistatic effects that are positive are colored in red while negative effects are colored in blue. 
+
+The scaling of epistatic effects and the coloring of positive and negative effects are customizable. See the instructions in the PDF for more details.
