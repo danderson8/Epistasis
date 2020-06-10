@@ -274,8 +274,9 @@ def main(data_input,
             delta_r2_values.append(delta_r2)
         indices = [f"order{n+1}" for n in range(-1, current_order+1)]
         indices = indices[1:]
-        r2_values = r2_values[1:]
-        adj_r2_values = adj_r2_values[1:]
+        r2_values = r2_values[1:current_order+2]
+        adj_r2_values = adj_r2_values[1:current_order+2]
+        delta_r2_values = delta_r2_values[0:current_order+1]
         r2_df = pd.DataFrame({
             'model_order': indices,
             'R2': r2_values,
